@@ -6,8 +6,7 @@
  * 
  * This library can be used to work together with a Matrix keypad 
  * for Arduino (generally of size 4x3, 3x3 or 4x4). 
- * 
- * 
+ *
  * See method comments below for more usage information.
  * 
  * This library use INPUT_PULLUP thus requires your board to support
@@ -16,10 +15,11 @@
  */
 
 
+
 #include "Keypad.h"
 
 Key::Key() {
-  state = FREE;
+	state = FREE;
 	lastval = UP;
 }
 
@@ -121,6 +121,8 @@ Keypad::Keypad(char* keymap, int* rowpins, int* colpins, int rowcount, int colco
 	}
 	
 	listener = NULL;
+
+	init();
 }
 
 Keypad::~Keypad() {

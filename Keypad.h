@@ -6,8 +6,7 @@
  * 
  * This library can be used to work together with a Matrix keypad 
  * for Arduino (generally of size 4x3, 3x3 or 4x4). 
- * 
- * 
+ *
  * See method comments below for more usage information.
  * 
  * This library use INPUT_PULLUP thus requires your board to support
@@ -36,7 +35,7 @@
 #define BUFFER_SIZE 100
 
 typedef enum {
-  PRESSED, RELEASED, FREE, HOLD
+	PRESSED, RELEASED, FREE, HOLD
 } KeyState;
 
 /**
